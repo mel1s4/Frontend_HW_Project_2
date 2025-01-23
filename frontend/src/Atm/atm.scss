@@ -1,0 +1,96 @@
+$atm: #efede2;
+$header: #1361a6;
+
+.atm {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+
+.atm-header {
+  padding: 1em 5rem;
+  border-radius: 1rem;
+  background-color: $header;
+  position: relative;
+  width: 38rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin: 0 auto;
+  }
+  .graffiti {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+  }
+}
+
+.atm-body {
+  background-color: $atm;
+  width: min-content;
+  padding: 1rem;
+  border-top: 10px solid #b6b6b7;
+  min-height: 70vh;
+}
+
+.credit-cards {
+  position: relative;
+  width: min-content;
+  margin: 0 auto;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.credit-cards__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  li.--active button {
+    opacity: 1;
+  }
+  button {
+    font-size: 0.7rem;
+    height: 4.2em;
+    background-color: transparent;
+    border: none;
+    text-indent: -99999px;
+    background-color: $atm;
+    opacity: 0.5;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0;
+    }
+  }
+  .Star {
+    width: 3.7em;
+  }
+  .Pulse {
+    width: 5.6em;
+  }
+  .Maestro, .MasterCard {
+    width: 3.9em;
+  }
+  .Plus {
+    width: 4.0em;
+  }
+  .Visa {
+    width: 3.6em;
+  }
+}
+
+.sticker {
+  position: relative;
+  top: -2em;
+  left: 4rem;
+  z-index: 7;
+}
